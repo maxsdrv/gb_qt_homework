@@ -1,11 +1,13 @@
-//
-// Created by maxim on 29.04.22.
-//
+#include <QApplication>
+
+#include "TriangleDialog.h"
 
 
 int main(int argc, char *argv[])
 {
+    QApplication app(argc, argv);
+    TriangleDialog triangleDialog("Triangle app");
+    triangleDialog.show();
 
-
-    return 0;
+    return QApplication::exec();
 }
